@@ -4,9 +4,22 @@ Marketing site for Heistly, a private payments desk. Seal ETH, USDC, or USDG int
 
 **The perfect getaway. No trail.**
 
+## $HEIST
+
+`$HEIST` is on Robinhood Chain. Contract address:
+
+```
+0xfbb0ce0cda66b4d9c0e2c62fc61e11ef6b19f5e4
+```
+
+- Website: [https://heistlyai.com](https://heistlyai.com)
+- X: [https://x.com/heistlyai](https://x.com/heistlyai)
+
+Only trust this CA from @heistlyai and heistlyai.com.
+
 - Domain: [heistlyai.com](https://heistlyai.com)
 - X: [@heistlyai](https://x.com/heistlyai) — footer only
-- Token: `$HEIST` on Robinhood Chain. The contract address stays empty in `js/config.js` until the real one is published. The site shows “Coming soon” and does not invent an address.
+- Token: `$HEIST` on Robinhood Chain. The official contract address is in the section above.
 
 This is a static site. No framework, no build step. The product is in development. The site does not show balances, notes, or a wallet.
 
