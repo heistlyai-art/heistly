@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Heistly</title>
+  <circle cx="32" cy="32" r="32" fill="#00C805"/>
+  <rect x="15" y="12" width="10" height="40" fill="#1C1B17"/>
+  <rect x="39" y="12" width="10" height="40" fill="#1C1B17"/>
+  <rect x="25" y="26" width="14" height="12" fill="#1C1B17"/>
+  <circle cx="32" cy="29.2" r="2.7" fill="#00C805"/>
+  <path d="M29.7 31.2h4.6l1.15 5.2h-6.9z" fill="#00C805"/>
+</svg>
