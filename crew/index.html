@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The crew — Heistly</title>
-  <meta name="description" content="Lookout, Forger, Banker, Wheelman, and Tail. Five AI roles for Heistly, each with a lane and a hard stop.">
+  <title>Crew API — Heistly</title>
+  <meta name="description" content="Private payments for scripts and AI agents. Heistly’s Crew API is an MCP surface and a CLI. It is not live, and it never takes a seed.">
   <link rel="canonical" href="https://heistlyai.com/crew/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Heistly">
-  <meta property="og:title" content="The crew — Heistly">
-  <meta property="og:description" content="Lookout, Forger, Banker, Wheelman, and Tail. Five AI roles for Heistly, each with a lane and a hard stop.">
+  <meta property="og:title" content="Crew API — Heistly">
+  <meta property="og:description" content="Private payments for scripts and AI agents. Heistly’s Crew API is an MCP surface and a CLI. It is not live, and it never takes a seed.">
   <meta property="og:url" content="https://heistlyai.com/crew/">
   <meta property="og:image" content="https://heistlyai.com/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Heistly. Your crew works the market while you sleep.">
+  <meta property="og:image:alt" content="Heistly. The perfect getaway. No trail.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@heistlyai">
-  <meta name="twitter:title" content="The crew — Heistly">
-  <meta name="twitter:description" content="Lookout, Forger, Banker, Wheelman, and Tail. Five AI roles for Heistly, each with a lane and a hard stop.">
+  <meta name="twitter:title" content="Crew API — Heistly">
+  <meta name="twitter:description" content="Private payments for scripts and AI agents. Heistly’s Crew API is an MCP surface and a CLI. It is not live, and it never takes a seed.">
   <meta name="twitter:image" content="https://heistlyai.com/og.png">
   <meta name="theme-color" content="#F4EEDF">
   <meta name="apple-mobile-web-app-title" content="Heistly">
@@ -46,8 +46,8 @@
   <header class="site-header">
     <div class="class-bar">
       <span>Heistly brief</span>
-      <span>Robinhood Chain + Solana</span>
-      <span>Not financial advice</span>
+      <span>Private payments</span>
+      <span>App coming soon</span>
     </div>
     <div class="nav-row">
       <a class="brand" href="/">
@@ -55,14 +55,19 @@
         <span class="brand-name">Heistly</span>
       </a>
       <nav class="primary-nav" aria-label="Primary">
-      <a href="/crew/" aria-current="page">Crew</a>
-      <a href="/how-it-works/">How it works</a>
-      <a href="/safehouse/">Safehouse</a>
-      <a href="/token/">$HEIST</a>
-      <a href="/faq/">FAQ</a>
+        <a href="/vault/">Vault</a>
+        <a href="/getaway/">Getaway</a>
+        <a href="/switch/">Switch</a>
+        <a href="/escape/">Escape</a>
+        <a href="/crew/" aria-current="page">Crew API</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/chains/">Chains</a>
+        <a href="/docs/">Docs</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/token/">$HEIST</a>
       </nav>
-      <span class="file-no">File 01</span>
-      <a class="btn btn-lime header-cta" data-app-link href="/#assemble">Assemble your crew</a>
+      <span class="file-no">File 05</span>
+      <a class="btn btn-lime header-cta" href="/#desk">Preview the desk</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
         <span class="nav-toggle-label">Menu</span>
       </button>
@@ -70,128 +75,90 @@
   </header>
   <div id="mobile-nav" class="mobile-nav" hidden>
     <nav aria-label="Mobile">
-      <a href="/crew/" aria-current="page">Crew</a>
-      <a href="/how-it-works/">How it works</a>
-      <a href="/safehouse/">Safehouse</a>
-      <a href="/token/">$HEIST</a>
-      <a href="/faq/">FAQ</a>
-      <a class="btn btn-lime" data-app-link href="/#assemble">Assemble your crew</a>
+        <a href="/vault/">Vault</a>
+        <a href="/getaway/">Getaway</a>
+        <a href="/switch/">Switch</a>
+        <a href="/escape/">Escape</a>
+        <a href="/crew/" aria-current="page">Crew API</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/chains/">Chains</a>
+        <a href="/docs/">Docs</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/token/">$HEIST</a>
+        <a class="btn btn-lime" href="/#desk">Preview the desk</a>
     </nav>
   </div>
 <main id="content">
   <header class="page-hero wrap">
-    <p class="kicker">File 01 — Personnel</p>
-    <h1>Five seats. No extras.</h1>
-    <p class="lede">A crew is not a crowd. Each role has a lane, a handoff, and something they are not allowed to do. Read the files before you give anyone a key to the desk.</p>
-    <nav class="seat-nav" aria-label="Crew seats"><a href="#lookout">Lookout</a> <a href="#forger">Forger</a> <a href="#banker">Banker</a> <a href="#wheelman">Wheelman</a> <a href="#tail">Tail</a></nav>
+    <p class="kicker">File 05 — Crew API</p>
+    <h1>Let an agent pay without borrowing your wallet.</h1>
+    <p class="lede">Crew API is the door for scripts and AI agents. They can ask the desk to seal, switch, escape, or send. The note and the proof stay on a machine you choose. The agent does not receive a seed. This door is drawn, not open.</p>
   </header>
-  <section class="section" style="padding-top:1.5rem" aria-label="Crew files">
+  <section class="section" aria-labelledby="doors-title">
     <div class="wrap">
-    <article class="personnel" id="lookout">
-      <div class="personnel-top">
-        <svg class="sigil" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 27h28" stroke="currentColor" stroke-width="1.6"/><path d="M16 27c1.8-5 4.2-7.2 8-7.2s6.2 2.2 8 7.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="24" cy="26.2" r="1.8" fill="currentColor"/></svg>
-        <div>
-          <p class="kicker">Seat 01 — Launches</p>
-          <h2>Lookout</h2>
-        </div>
-        <p class="will-not">Does not buy</p>
+      <p class="demo-flag"><span>Preview</span> The commands below are the shape of the brief. They do not run. There is no live endpoint on this site.</p>
+      <div class="section-head">
+        <p class="kicker">Two doors</p>
+        <h2 id="doors-title">A CLI for scripts. MCP for agents.</h2>
       </div>
-      <dl class="facts">
-        <div><dt>Watches</dt><dd>New token launches on Robinhood Chain and Solana.</dd></div>
-        <div><dt>Hands work to</dt><dd>Forger, with the name and which of your rules matched.</dd></div>
-        <div><dt>Will not</dt><dd>Place a trade, size a ticket, or talk a missed name back onto the sheet.</dd></div>
-      </dl>
-      <blockquote>
-        <p>“New launch on Robinhood Chain. Demo name NIGHTGLASS. Six minutes old. It matches the sheet. File is yours.”</p>
-        <footer>Sample line from the demo feed</footer>
-      </blockquote>
-    </article>
-    <article class="personnel" id="forger">
-      <div class="personnel-top">
-        <svg class="sigil" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="13" y="9" width="22" height="30" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M18 25.5l4.2 4.2 8.2-9.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 14h16" stroke="currentColor" stroke-width="1.6"/></svg>
-        <div>
-          <p class="kicker">Seat 02 — Contracts</p>
-          <h2>Forger</h2>
-        </div>
-        <p class="will-not">Does not size</p>
+      <div class="card-grid cols-3">
+        <article class="plain-card">
+          <p class="kicker">CLI</p>
+          <h3>heist</h3>
+          <p>A command line for jobs you can read before they run. Seal a note. Pay an address. Ask for a switch. Nothing here is installed yet.</p>
+        </article>
+        <article class="plain-card">
+          <p class="kicker">MCP</p>
+          <h3>Tools, not keys</h3>
+          <p>An assistant calls a named tool. The tool asks the desk. The assistant never sees the secret inside the note, and it never sees a seed phrase.</p>
+        </article>
+        <article class="plain-card">
+          <p class="kicker">Driver</p>
+          <h3>Same relayer</h3>
+          <p>An agent does not get a special trail. A getaway it requests is still posted by the Driver, and your wallet is still absent from that send.</p>
+        </article>
       </div>
-      <dl class="facts">
-        <div><dt>Watches</dt><dd>The contract, holder concentration, snipers, and honeypot risk.</dd></div>
-        <div><dt>Hands work to</dt><dd>The Banker, with a verdict: cleared, watch, or walk away.</dd></div>
-        <div><dt>Will not</dt><dd>Decide the amount. Sizing belongs to the Banker.</dd></div>
-      </dl>
-      <blockquote>
-        <p>“Contract read on NIGHTGLASS. Dev share looks modest. Snipers are quiet. Honeypot check is clear. Verdict: cleared to size. I do not set the amount.”</p>
-        <footer>Sample line from the demo feed</footer>
-      </blockquote>
-    </article>
-    <article class="personnel" id="banker">
-      <div class="personnel-top">
-        <svg class="sigil" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 16h24M12 24h24M12 32h14" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="30" y="27" width="8" height="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M32.2 27v-2.2a1.8 1.8 0 0 1 3.6 0V27" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-        <div>
-          <p class="kicker">Seat 03 — The sheet</p>
-          <h2>Banker</h2>
-        </div>
-        <p class="will-not">Can veto</p>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="sample-title">
+    <div class="wrap two-col">
+      <div>
+        <p class="kicker">Sample, not a console</p>
+        <h2 id="sample-title">What a script might say.</h2>
+        <p class="lede">Amounts and the destination are placeholders. Copying this into a terminal today will not find a Heistly command, because the app is not open.</p>
       </div>
-      <dl class="facts">
-        <div><dt>Watches</dt><dd>Nightly spend, per-trade size, and whether a stop is actually on the ticket.</dd></div>
-        <div><dt>Hands work to</dt><dd>Wheelman, only after a clear. Or a stamp that says the job is over.</dd></div>
-        <div><dt>Will not</dt><dd>Raise the cap because a name is moving. The sheet does not negotiate at 2 a.m.</dd></div>
-      </dl>
-      <blockquote>
-        <p>“Not tonight. A stop was not on the ticket, and I do not let a fresh launch leave without one. Veto. The cap stays intact.”</p>
-        <footer>Sample line from the demo feed</footer>
-      </blockquote>
-    </article>
-    <article class="personnel" id="wheelman">
-      <div class="personnel-top">
-        <svg class="sigil" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 24h14M24 18l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-        <div>
-          <p class="kicker">Seat 04 — Execution</p>
-          <h2>Wheelman</h2>
-        </div>
-        <p class="will-not">After a clear</p>
+      <pre class="sample" aria-label="Preview of the Crew CLI, not a live tool"><code>heist note seal --asset usdc --amount 250
+heist getaway pay --asset usdc --amount 40 --to 0x44…E2
+heist switch quote --from eth --to usdg
+heist escape route --to base --asset eth</code></pre>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="tools-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">MCP names on the brief</p>
+        <h2 id="tools-title">Tools an agent would call.</h2>
+        <p class="lede">Names only. No schema is published, and none of these resolve. They are here so a builder can see the shape of the desk.</p>
       </div>
-      <dl class="facts">
-        <div><dt>Watches</dt><dd>The fill, the slippage, and the exits armed before the dust settles.</dd></div>
-        <div><dt>Hands work to</dt><dd>The position back to the desk, with the stop and the scale-out already set.</dd></div>
-        <div><dt>Will not</dt><dd>Enter a trade the Banker did not clear, or add size that was not on the ticket.</dd></div>
+      <dl class="glossary">
+        <div><dt>heist.note.seal</dt><dd>Ask to seal ETH, USDC, or USDG into a note that stays on the caller’s machine.</dd></div>
+        <div><dt>heist.getaway.pay</dt><dd>Ask the Driver to pay an address. The tool takes a destination and an amount, not a seed.</dd></div>
+        <div><dt>heist.switch.quote</dt><dd>Ask what a trade inside the vault would look like. A quote is not a fill, and the app is not quoting yet.</dd></div>
+        <div><dt>heist.escape.route</dt><dd>Ask for a private bridge onto Robinhood Chain, Base, Arbitrum, BNB Chain, or Solana.</dd></div>
       </dl>
-      <blockquote>
-        <p>“Bought NIGHTGLASS. Exits are armed on the way in: scale out on the way up, hard stop under the entry. I am not adding.”</p>
-        <footer>Sample line from the demo feed</footer>
-      </blockquote>
-    </article>
-    <article class="personnel" id="tail">
-      <div class="personnel-top">
-        <svg class="sigil" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="34" cy="24" r="4.2" fill="currentColor"/><circle cx="22" cy="24" r="2.6" fill="currentColor" opacity="0.75"/><circle cx="13" cy="24" r="1.5" fill="currentColor" opacity="0.45"/></svg>
-        <div>
-          <p class="kicker">Seat 05 — Wallets you name</p>
-          <h2>Tail</h2>
-        </div>
-        <p class="will-not">Your list only</p>
-      </div>
-      <dl class="facts">
-        <div><dt>Watches</dt><dd>Only the wallets you labeled. No one you did not name.</dd></div>
-        <div><dt>Hands work to</dt><dd>Lookout and the morning file, with what those wallets did and when.</dd></div>
-        <div><dt>Will not</dt><dd>Invent a wallet, or follow one that is not already on your list.</dd></div>
-      </dl>
-      <blockquote>
-        <p>“The wallet you labeled North Door moved. It bought the same demo name about a minute before our fill. No new wallet was added.”</p>
-        <footer>Sample line from the demo feed</footer>
-      </blockquote>
-    </article>
     </div>
   </section>
   <section class="cta-band" aria-labelledby="crew-cta">
     <div class="wrap">
-      <p class="kicker">Next</p>
-      <h2 id="crew-cta">Write the rules they work under.</h2>
-      <a class="btn btn-lime" href="/how-it-works/">How it works</a>
+      <p class="kicker">Not live</p>
+      <h2 id="crew-cta">No agent can spend from this page.</h2>
+      <p class="lede">When the API opens, the docs will carry the real commands. Until then, treat any package or endpoint that claims to be Heistly as untrusted.</p>
+      <a class="btn btn-lime" href="/docs/">Read the short docs</a>
+      <p class="soon">App coming soon</p>
     </div>
   </section>
 </main>
+
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
@@ -199,38 +166,37 @@
           <img src="/assets/logo.svg" width="36" height="36" alt="">
           <span class="brand-name">Heistly</span>
         </a>
-        <p>Your crew works the market while you sleep. Five AI roles, one Safehouse, a budget that can say no.</p>
-      </div>
-      <div>
-        <h2>Brief</h2>
-        <ul>
-          <li><a href="/crew/">The crew</a></li>
-          <li><a href="/how-it-works/">How it works</a></li>
-          <li><a href="/safehouse/">Safehouse</a></li>
-          <li><a href="/token/">$HEIST and the Split</a></li>
-          <li><a href="/faq/">FAQ</a></li>
-        </ul>
+        <p>The perfect getaway. No trail. Seal a note, let the Driver pay the gas, and keep your wallet off the send.</p>
       </div>
       <div>
         <h2>Desk</h2>
         <ul>
-          <li><a data-app-link href="/#assemble">Assemble your crew</a></li>
-          <li><a href="/#debrief">Morning debrief</a></li>
-          <li><a data-x-link href="https://x.com/heistlyai">@heistlyai</a></li>
+          <li><a href="/vault/">Vault</a></li>
+          <li><a href="/getaway/">Getaway</a></li>
+          <li><a href="/switch/">Switch</a></li>
+          <li><a href="/escape/">Escape</a></li>
+          <li><a href="/crew/">Crew API</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Brief</h2>
+        <ul>
+          <li><a href="/how-it-works/">How it works</a></li>
+          <li><a href="/chains/">Chains</a></li>
+          <li><a href="/docs/">Docs</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/token/">$HEIST</a></li>
         </ul>
       </div>
     </div>
-    <p class="disclaimer">Demo tokens and numbers are illustrative. Not financial advice.</p>
+    <p class="disclaimer">Preview figures are invented. The app is not open. Heistly is not a custodian and this is not financial advice.</p>
     <div class="footer-end">
       <p>&copy; <span data-year>2026</span> Heistly · heistlyai.com</p>
-      <div class="footer-social">
-        <a class="gh-link" data-github href="" hidden>GitHub</a>
-        <a class="x-link" data-x-link href="https://x.com/heistlyai" rel="me noopener noreferrer" target="_blank" aria-label="Heistly on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-      </div>
+      <a class="x-link" data-x-link href="https://x.com/heistlyai" rel="me noopener noreferrer" target="_blank" aria-label="Heistly on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     </div>
   </footer>
   <script src="/js/config.js"></script>
   <script src="/js/main.js"></script>
-  <script src="/js/safehouse.js"></script>
+  <script src="/js/motion.js"></script>
 </body>
 </html>

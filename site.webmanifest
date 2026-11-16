@@ -1,7 +1,7 @@
 {
   "name": "Heistly",
   "short_name": "Heistly",
-  "description": "Your crew works the market while you sleep.",
+  "description": "The perfect getaway. No trail.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

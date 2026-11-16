@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAQ — Heistly</title>
-  <meta name="description" content="What Heistly is, how custody works, what the Safehouse demo shows, and how the $HEIST split is published.">
+  <meta name="description" content="What Heistly is, what a note and the Driver do, which chains are on the brief, and why the $HEIST contract field is empty.">
   <link rel="canonical" href="https://heistlyai.com/faq/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Heistly">
   <meta property="og:title" content="FAQ — Heistly">
-  <meta property="og:description" content="What Heistly is, how custody works, what the Safehouse demo shows, and how the $HEIST split is published.">
+  <meta property="og:description" content="What Heistly is, what a note and the Driver do, which chains are on the brief, and why the $HEIST contract field is empty.">
   <meta property="og:url" content="https://heistlyai.com/faq/">
   <meta property="og:image" content="https://heistlyai.com/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Heistly. Your crew works the market while you sleep.">
+  <meta property="og:image:alt" content="Heistly. The perfect getaway. No trail.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@heistlyai">
   <meta name="twitter:title" content="FAQ — Heistly">
-  <meta name="twitter:description" content="What Heistly is, how custody works, what the Safehouse demo shows, and how the $HEIST split is published.">
+  <meta name="twitter:description" content="What Heistly is, what a note and the Driver do, which chains are on the brief, and why the $HEIST contract field is empty.">
   <meta name="twitter:image" content="https://heistlyai.com/og.png">
   <meta name="theme-color" content="#F4EEDF">
   <meta name="apple-mobile-web-app-title" content="Heistly">
@@ -39,102 +39,15 @@
       }
     } catch (e) {}
   </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Heistly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Heistly is a crew of five AI agents that work a market plan you wrote. They watch launches on Robinhood Chain and Solana, inspect contracts, guard a budget, place trades, and follow wallets you name. You read the night in a morning debrief."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which markets can the crew watch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Robinhood Chain and Solana. Lookout only flags launches that match rules you set. Anything off the sheet stays off the desk."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the Safehouse on this site live?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The feed here is a scripted demo with invented token names and made-up results. It shows how the crew hands work to each other. It is not a live market and not a record of real trades."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Heistly hold my keys?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. You bring your own wallet. Keys and seed phrases stay in your custody, and orders are signed through a secure wallet provider. Heistly does not store them."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can the crew trade past my limits?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The Banker exists to enforce the sheet: nightly spend, per-trade size, and stop-loss. If a job breaks the sheet, the Banker vetoes it. The stamp on that file reads aborted."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does Tail follow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Only wallets you choose and label yourself. Tail reports their moves into the Safehouse. Heistly does not hand you a list of strangers to copy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is $HEIST?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "$HEIST is the crew's token, on Robinhood Chain. The contract address is not published yet. When it is, it will show on the token page. Heistly will not send you a contract in a direct message."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does the Split work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fees from trades are divided by a published split. The initial cut is 40% buyback and liquidity, 30% crew rewards for active users, and 30% operations. That split may change. Every change is posted before it takes effect."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is this financial advice?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Trading can go to zero. Demo names and numbers on this site are illustrative. Nothing here is a solicitation or a promise of profit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When can I assemble a crew?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The app is not open yet. The button on this site stays on the brief until the desk opens."
-      }
-    }
-  ]
-}
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Heistly?","acceptedAnswer":{"@type":"Answer","text":"Heistly is a private payments desk. You seal ETH, USDC, or USDG into an encrypted note. When you pay someone, a Driver posts the transaction and pays the gas. Your wallet is not on that send."}},{"@type":"Question","name":"Which assets can I seal?","acceptedAnswer":{"@type":"Answer","text":"ETH, USDC, and USDG. A switch trades among those three inside the vault, so you do not withdraw to a public wallet just to change what you are holding."}},{"@type":"Question","name":"Does my wallet pay the gas on a getaway?","acceptedAnswer":{"@type":"Answer","text":"No. The Driver is a relayer. It pays the gas and submits the proof. Your wallet does not sign the outgoing transaction, which is why it never touches that send."}},{"@type":"Question","name":"Is the desk on this site live?","acceptedAnswer":{"@type":"Answer","text":"No. The panel is a scripted preview. Balances, notes, and deliveries are invented. The app is not open yet."}},{"@type":"Question","name":"What does \u201cno trail\u201d mean?","acceptedAnswer":{"@type":"Answer","text":"The payout does not carry your address. The deposit into the vault is still public: the chain can see that assets went in. The note, which stays with you, is what connects that deposit to a later getaway. Heistly does not claim that every observer is blind."}},{"@type":"Question","name":"What is a note?","acceptedAnswer":{"@type":"Answer","text":"A note is the encrypted record of what you sealed: the asset, the amount, and a secret only you can use. Heistly is not meant to keep a copy, and the desk never asks you to paste a seed phrase."}},{"@type":"Question","name":"What is the Driver?","acceptedAnswer":{"@type":"Answer","text":"The Driver carries a getaway onto the chain. You build the proof where you sit. The Driver pays the gas and posts the send. It does not need your seed, and it does not choose who gets paid."}},{"@type":"Question","name":"What is Safehouse recovery?","acceptedAnswer":{"@type":"Answer","text":"A one-time burner can seal funds in. It should not be the address that gets paid later. You hold the note, and a getaway pays a wallet you actually keep. The burner is not the receiver."}},{"@type":"Question","name":"Which chains are escape routes?","acceptedAnswer":{"@type":"Answer","text":"Robinhood Chain, Base, Arbitrum, BNB Chain, and Solana. $HEIST itself is issued on Robinhood Chain. The contract is not published yet."}},{"@type":"Question","name":"Where is the $HEIST contract?","acceptedAnswer":{"@type":"Answer","text":"It is not published. This site will print the address when it is real. Until then the field stays empty on purpose. Treat any contract sent to you in a message as a fake."}},{"@type":"Question","name":"Do you hold my keys?","acceptedAnswer":{"@type":"Answer","text":"No. Notes and proofs are meant to stay on a machine you control. Heistly is not a custodian. If a screen asks you to paste a seed phrase, it is not this desk."}},{"@type":"Question","name":"Can an agent pay through Heistly?","acceptedAnswer":{"@type":"Answer","text":"That is the Crew API: an MCP surface and a CLI for scripts and assistants. It is drawn in the brief, and it is not live. An agent can ask for a getaway. It does not receive your seed."}}]}</script>
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <div class="class-bar">
       <span>Heistly brief</span>
-      <span>Robinhood Chain + Solana</span>
-      <span>Not financial advice</span>
+      <span>Private payments</span>
+      <span>App coming soon</span>
     </div>
     <div class="nav-row">
       <a class="brand" href="/">
@@ -142,14 +55,19 @@
         <span class="brand-name">Heistly</span>
       </a>
       <nav class="primary-nav" aria-label="Primary">
-      <a href="/crew/">Crew</a>
-      <a href="/how-it-works/">How it works</a>
-      <a href="/safehouse/">Safehouse</a>
-      <a href="/token/">$HEIST</a>
-      <a href="/faq/" aria-current="page">FAQ</a>
+        <a href="/vault/">Vault</a>
+        <a href="/getaway/">Getaway</a>
+        <a href="/switch/">Switch</a>
+        <a href="/escape/">Escape</a>
+        <a href="/crew/">Crew API</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/chains/">Chains</a>
+        <a href="/docs/">Docs</a>
+        <a href="/faq/" aria-current="page">FAQ</a>
+        <a href="/token/">$HEIST</a>
       </nav>
-      <span class="file-no">File 05</span>
-      <a class="btn btn-lime header-cta" data-app-link href="/#assemble">Assemble your crew</a>
+      <span class="file-no">File 09</span>
+      <a class="btn btn-lime header-cta" href="/#desk">Preview the desk</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
         <span class="nav-toggle-label">Menu</span>
       </button>
@@ -157,75 +75,90 @@
   </header>
   <div id="mobile-nav" class="mobile-nav" hidden>
     <nav aria-label="Mobile">
-      <a href="/crew/">Crew</a>
-      <a href="/how-it-works/">How it works</a>
-      <a href="/safehouse/">Safehouse</a>
-      <a href="/token/">$HEIST</a>
-      <a href="/faq/" aria-current="page">FAQ</a>
-      <a class="btn btn-lime" data-app-link href="/#assemble">Assemble your crew</a>
+        <a href="/vault/">Vault</a>
+        <a href="/getaway/">Getaway</a>
+        <a href="/switch/">Switch</a>
+        <a href="/escape/">Escape</a>
+        <a href="/crew/">Crew API</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/chains/">Chains</a>
+        <a href="/docs/">Docs</a>
+        <a href="/faq/" aria-current="page">FAQ</a>
+        <a href="/token/">$HEIST</a>
+        <a class="btn btn-lime" href="/#desk">Preview the desk</a>
     </nav>
   </div>
 <main id="content">
   <header class="page-hero wrap">
-    <p class="kicker">File 05 — Questions</p>
-    <h1>Before the job.</h1>
-    <p class="lede">Straight answers. If the app is not open, this page says so. If a number is a demo, this page says so.</p>
+    <p class="kicker">File 09 — FAQ</p>
+    <h1>Ask these before you seal.</h1>
+    <p class="lede">Straight answers. Where the product is still a brief, the answer says so. Nothing below is a live balance or a promise that every observer is blind.</p>
   </header>
-  <section class="section" style="padding-top:0.5rem" aria-label="Questions">
+  <section class="section" aria-labelledby="all-faq">
     <div class="wrap">
+      <h2 id="all-faq" class="sr-only">Questions</h2>
       <div class="faq-list">
       <details class="faq" open>
         <summary>What is Heistly?</summary>
-        <div class="answer"><p>Heistly is a crew of five AI agents that work a market plan you wrote. They watch launches on Robinhood Chain and Solana, inspect contracts, guard a budget, place trades, and follow wallets you name. You read the night in a morning debrief.</p></div>
+        <div class="answer"><p>Heistly is a private payments desk. You seal ETH, USDC, or USDG into an encrypted note. When you pay someone, a Driver posts the transaction and pays the gas. Your wallet is not on that send.</p></div>
       </details>
       <details class="faq">
-        <summary>Which markets can the crew watch?</summary>
-        <div class="answer"><p>Robinhood Chain and Solana. Lookout only flags launches that match rules you set. Anything off the sheet stays off the desk.</p></div>
+        <summary>Which assets can I seal?</summary>
+        <div class="answer"><p>ETH, USDC, and USDG. A switch trades among those three inside the vault, so you do not withdraw to a public wallet just to change what you are holding.</p></div>
       </details>
       <details class="faq">
-        <summary>Is the Safehouse on this site live?</summary>
-        <div class="answer"><p>No. The feed here is a scripted demo with invented token names and made-up results. It shows how the crew hands work to each other. It is not a live market and not a record of real trades.</p></div>
+        <summary>Does my wallet pay the gas on a getaway?</summary>
+        <div class="answer"><p>No. The Driver is a relayer. It pays the gas and submits the proof. Your wallet does not sign the outgoing transaction, which is why it never touches that send.</p></div>
       </details>
       <details class="faq">
-        <summary>Does Heistly hold my keys?</summary>
-        <div class="answer"><p>No. You bring your own wallet. Keys and seed phrases stay in your custody, and orders are signed through a secure wallet provider. Heistly does not store them.</p></div>
+        <summary>Is the desk on this site live?</summary>
+        <div class="answer"><p>No. The panel is a scripted preview. Balances, notes, and deliveries are invented. The app is not open yet.</p></div>
       </details>
       <details class="faq">
-        <summary>Can the crew trade past my limits?</summary>
-        <div class="answer"><p>No. The Banker exists to enforce the sheet: nightly spend, per-trade size, and stop-loss. If a job breaks the sheet, the Banker vetoes it. The stamp on that file reads aborted.</p></div>
+        <summary>What does “no trail” mean?</summary>
+        <div class="answer"><p>The payout does not carry your address. The deposit into the vault is still public: the chain can see that assets went in. The note, which stays with you, is what connects that deposit to a later getaway. Heistly does not claim that every observer is blind.</p></div>
       </details>
       <details class="faq">
-        <summary>What does Tail follow?</summary>
-        <div class="answer"><p>Only wallets you choose and label yourself. Tail reports their moves into the Safehouse. Heistly does not hand you a list of strangers to copy.</p></div>
+        <summary>What is a note?</summary>
+        <div class="answer"><p>A note is the encrypted record of what you sealed: the asset, the amount, and a secret only you can use. Heistly is not meant to keep a copy, and the desk never asks you to paste a seed phrase.</p></div>
       </details>
       <details class="faq">
-        <summary>What is $HEIST?</summary>
-        <div class="answer"><p>$HEIST is the crew's token, on Robinhood Chain. The contract address is not published yet. When it is, it will show on the token page. Heistly will not send you a contract in a direct message.</p></div>
+        <summary>What is the Driver?</summary>
+        <div class="answer"><p>The Driver carries a getaway onto the chain. You build the proof where you sit. The Driver pays the gas and posts the send. It does not need your seed, and it does not choose who gets paid.</p></div>
       </details>
       <details class="faq">
-        <summary>How does the Split work?</summary>
-        <div class="answer"><p>Fees from trades are divided by a published split. The initial cut is 40% buyback and liquidity, 30% crew rewards for active users, and 30% operations. That split may change. Every change is posted before it takes effect.</p></div>
+        <summary>What is Safehouse recovery?</summary>
+        <div class="answer"><p>A one-time burner can seal funds in. It should not be the address that gets paid later. You hold the note, and a getaway pays a wallet you actually keep. The burner is not the receiver.</p></div>
       </details>
       <details class="faq">
-        <summary>Is this financial advice?</summary>
-        <div class="answer"><p>No. Trading can go to zero. Demo names and numbers on this site are illustrative. Nothing here is a solicitation or a promise of profit.</p></div>
+        <summary>Which chains are escape routes?</summary>
+        <div class="answer"><p>Robinhood Chain, Base, Arbitrum, BNB Chain, and Solana. $HEIST itself is issued on Robinhood Chain. The contract is not published yet.</p></div>
       </details>
       <details class="faq">
-        <summary>When can I assemble a crew?</summary>
-        <div class="answer"><p>The app is not open yet. The button on this site stays on the brief until the desk opens.</p></div>
+        <summary>Where is the $HEIST contract?</summary>
+        <div class="answer"><p>It is not published. This site will print the address when it is real. Until then the field stays empty on purpose. Treat any contract sent to you in a message as a fake.</p></div>
       </details>
-    </div>
+      <details class="faq">
+        <summary>Do you hold my keys?</summary>
+        <div class="answer"><p>No. Notes and proofs are meant to stay on a machine you control. Heistly is not a custodian. If a screen asks you to paste a seed phrase, it is not this desk.</p></div>
+      </details>
+      <details class="faq">
+        <summary>Can an agent pay through Heistly?</summary>
+        <div class="answer"><p>That is the Crew API: an MCP surface and a CLI for scripts and assistants. It is drawn in the brief, and it is not live. An agent can ask for a getaway. It does not receive your seed.</p></div>
+      </details>
+      </div>
     </div>
   </section>
   <section class="cta-band" aria-labelledby="faq-cta">
     <div class="wrap">
-      <h2 id="faq-cta">Assemble your crew</h2>
-      <p class="lede">The desk is being built. You can read the brief until the doors open.</p>
-      <a class="btn btn-lime" data-app-link href="/#assemble">Assemble your crew</a>
+      <p class="kicker">The desk is closed</p>
+      <h2 id="faq-cta">See the preview, not a wallet.</h2>
+      <a class="btn btn-lime" href="/#desk">Preview the desk</a>
       <p class="soon">App coming soon</p>
     </div>
   </section>
 </main>
+
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
@@ -233,38 +166,37 @@
           <img src="/assets/logo.svg" width="36" height="36" alt="">
           <span class="brand-name">Heistly</span>
         </a>
-        <p>Your crew works the market while you sleep. Five AI roles, one Safehouse, a budget that can say no.</p>
-      </div>
-      <div>
-        <h2>Brief</h2>
-        <ul>
-          <li><a href="/crew/">The crew</a></li>
-          <li><a href="/how-it-works/">How it works</a></li>
-          <li><a href="/safehouse/">Safehouse</a></li>
-          <li><a href="/token/">$HEIST and the Split</a></li>
-          <li><a href="/faq/">FAQ</a></li>
-        </ul>
+        <p>The perfect getaway. No trail. Seal a note, let the Driver pay the gas, and keep your wallet off the send.</p>
       </div>
       <div>
         <h2>Desk</h2>
         <ul>
-          <li><a data-app-link href="/#assemble">Assemble your crew</a></li>
-          <li><a href="/#debrief">Morning debrief</a></li>
-          <li><a data-x-link href="https://x.com/heistlyai">@heistlyai</a></li>
+          <li><a href="/vault/">Vault</a></li>
+          <li><a href="/getaway/">Getaway</a></li>
+          <li><a href="/switch/">Switch</a></li>
+          <li><a href="/escape/">Escape</a></li>
+          <li><a href="/crew/">Crew API</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Brief</h2>
+        <ul>
+          <li><a href="/how-it-works/">How it works</a></li>
+          <li><a href="/chains/">Chains</a></li>
+          <li><a href="/docs/">Docs</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/token/">$HEIST</a></li>
         </ul>
       </div>
     </div>
-    <p class="disclaimer">Demo tokens and numbers are illustrative. Not financial advice.</p>
+    <p class="disclaimer">Preview figures are invented. The app is not open. Heistly is not a custodian and this is not financial advice.</p>
     <div class="footer-end">
       <p>&copy; <span data-year>2026</span> Heistly · heistlyai.com</p>
-      <div class="footer-social">
-        <a class="gh-link" data-github href="" hidden>GitHub</a>
-        <a class="x-link" data-x-link href="https://x.com/heistlyai" rel="me noopener noreferrer" target="_blank" aria-label="Heistly on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-      </div>
+      <a class="x-link" data-x-link href="https://x.com/heistlyai" rel="me noopener noreferrer" target="_blank" aria-label="Heistly on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     </div>
   </footer>
   <script src="/js/config.js"></script>
   <script src="/js/main.js"></script>
-  <script src="/js/safehouse.js"></script>
+  <script src="/js/motion.js"></script>
 </body>
 </html>

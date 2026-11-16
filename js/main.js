@@ -9,26 +9,6 @@
     if (cfg.xUrl) el.href = cfg.xUrl;
   });
 
-  document.querySelectorAll("[data-app-link]").forEach(function (el) {
-    var url = (cfg.appUrl || "").trim();
-    if (url && url !== "#") {
-      el.href = url;
-      if (/^https?:/i.test(url)) {
-        el.target = "_blank";
-        el.rel = "noopener noreferrer";
-      }
-    }
-  });
-
-  var github = document.querySelector("[data-github]");
-  if (github) {
-    var gh = (cfg.githubUrl || "").trim();
-    if (gh) {
-      github.href = gh;
-      github.hidden = false;
-    }
-  }
-
   var address = cfg.token && typeof cfg.token.contractAddress === "string"
     ? cfg.token.contractAddress.trim()
     : "";
@@ -48,9 +28,10 @@
     copyBtn.hidden = false;
     copyBtn.addEventListener("click", function () {
       var done = function (label) {
+        var previous = copyBtn.getAttribute("data-label") || "Copy contract";
         copyBtn.textContent = label;
         window.setTimeout(function () {
-          copyBtn.textContent = "Copy contract";
+          copyBtn.textContent = previous;
         }, 1800);
       };
       if (navigator.clipboard && navigator.clipboard.writeText) {
