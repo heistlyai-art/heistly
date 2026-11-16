@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Launch app — Heistly</title>
+  <meta name="description" content="Connect a wallet to the Heistly desk. Getaway, Switch, and Escape are in development. Native balances are read from the chain.">
+  <link rel="canonical" href="https://heistlyai.com/app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Heistly">
+  <meta property="og:title" content="Launch app — Heistly">
+  <meta property="og:description" content="Connect a wallet to the Heistly desk. Getaway, Switch, and Escape are in development.">
+  <meta property="og:url" content="https://heistlyai.com/app/">
+  <meta property="og:image" content="https://heistlyai.com/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Launch app — Heistly">
+  <meta name="theme-color" content="#F4EEDF">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("reduce-motion");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body class="app-page">
+  <div class="app-rays" aria-hidden="true"></div>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="app-top">
+    <a class="brand" href="/">
+      <img src="/assets/logo.svg" width="36" height="36" alt="">
+      <span class="brand-name">Heistly</span>
+    </a>
+    <span class="file-no">In development</span>
+  </header>
+  <main id="content" class="app-main">
+    <form class="app-card" id="desk-form" autocomplete="off">
+      <div class="app-tabs" role="tablist" aria-label="Desk actions">
+        <button type="button" role="tab" id="tab-getaway" aria-selected="true" aria-controls="desk-panel" data-tab="getaway">Getaway</button>
+        <button type="button" role="tab" id="tab-switch" aria-selected="false" aria-controls="desk-panel" data-tab="switch">Switch</button>
+        <button type="button" role="tab" id="tab-escape" aria-selected="false" aria-controls="desk-panel" data-tab="escape">Escape</button>
+      </div>
+      <p class="app-note" id="tab-note">Private send. The Driver would post it. That action is not open yet.</p>
+      <div id="desk-panel">
+        <div class="wallet-row">
+          <button class="btn btn-lime" type="button" id="connect">Connect wallet</button>
+          <p class="wallet-meta" id="wallet-meta" hidden>
+            <strong id="wallet-addr"></strong>
+            <span id="wallet-bal"></span>
+          </p>
+        </div>
+        <p class="wallet-fallback" id="wallet-fallback" hidden>No injected wallet was found. Install MetaMask, Rabby, or another EIP-1193 wallet, then reload this page.</p>
+        <p class="app-status" id="wallet-status" role="status"></p>
+
+        <p class="asset-label" id="asset-label">Asset</p>
+        <div class="asset-picks" role="group" aria-labelledby="asset-label">
+          <button type="button" data-asset="ETH" aria-pressed="true">ETH</button>
+          <button type="button" data-asset="USDC" aria-pressed="false">USDC</button>
+          <button type="button" data-asset="USDG" aria-pressed="false">USDG</button>
+        </div>
+
+        <label class="app-field" for="amount">
+          <span>Amount</span>
+          <span class="amount-row">
+            <input id="amount" name="amount" inputmode="decimal" autocomplete="off" placeholder="Amount">
+            <button type="button" id="max" disabled>MAX</button>
+          </span>
+        </label>
+        <p class="field-note" id="bal-note">Connect a wallet to read a native balance from the chain.</p>
+
+        <div id="switch-to" hidden>
+          <p class="asset-label" id="into-label">Into</p>
+          <div class="asset-picks" role="group" aria-labelledby="into-label">
+            <button type="button" data-into="ETH" aria-pressed="false">ETH</button>
+            <button type="button" data-into="USDC" aria-pressed="true">USDC</button>
+            <button type="button" data-into="USDG" aria-pressed="false">USDG</button>
+          </div>
+        </div>
+
+        <label class="app-field" id="recipient-field" for="recipient">
+          <span>Recipient address</span>
+          <input id="recipient" name="recipient" spellcheck="false" autocapitalize="off" placeholder="0x address">
+        </label>
+
+        <label class="app-field" for="network">
+          <span id="network-label">Network</span>
+          <select id="network" name="network">
+            <option value="robinhood">Robinhood Chain</option>
+            <option value="base">Base</option>
+            <option value="arbitrum">Arbitrum</option>
+            <option value="bnb">BNB Chain</option>
+          </select>
+        </label>
+
+        <button class="btn btn-soon app-go" type="button" id="go" disabled>Enter the details</button>
+        <p class="field-note">Vault contracts are not deployed, so this desk cannot send, swap, or bridge. A connected wallet can show its real address and the native balance read from the chain.</p>
+      </div>
+    </form>
+  </main>
+  <nav class="app-mini" aria-label="Desk links">
+    <a href="/docs/">Docs</a>
+    <a href="/how-it-works/#safehouse">Recover</a>
+    <a href="/crew/">Crew API</a>
+    <a href="/chains/">Chains</a>
+    <a href="/faq/">FAQ</a>
+  </nav>
+  <script src="/js/app.js"></script>
+</body>
+</html>

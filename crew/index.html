@@ -47,7 +47,7 @@
     <div class="class-bar">
       <span>Heistly brief</span>
       <span>Private payments</span>
-      <span>App coming soon</span>
+      <span>In development</span>
     </div>
     <div class="nav-row">
       <a class="brand" href="/">
@@ -67,7 +67,7 @@
         <a href="/token/">$HEIST</a>
       </nav>
       <span class="file-no">File 05</span>
-      <a class="btn btn-lime header-cta" href="/#desk">Preview the desk</a>
+      <a class="btn btn-lime header-cta" href="/app/">Launch app</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
         <span class="nav-toggle-label">Menu</span>
       </button>
@@ -85,7 +85,7 @@
         <a href="/docs/">Docs</a>
         <a href="/faq/">FAQ</a>
         <a href="/token/">$HEIST</a>
-        <a class="btn btn-lime" href="/#desk">Preview the desk</a>
+        <a class="btn btn-lime" href="/app/">Launch app</a>
     </nav>
   </div>
 <main id="content">
@@ -96,7 +96,6 @@
   </header>
   <section class="section" aria-labelledby="doors-title">
     <div class="wrap">
-      <p class="demo-flag"><span>Preview</span> The commands below are the shape of the brief. They do not run. There is no live endpoint on this site.</p>
       <div class="section-head">
         <p class="kicker">Two doors</p>
         <h2 id="doors-title">A CLI for scripts. MCP for agents.</h2>
@@ -123,14 +122,14 @@
   <section class="section" aria-labelledby="sample-title">
     <div class="wrap two-col">
       <div>
-        <p class="kicker">Sample, not a console</p>
-        <h2 id="sample-title">What a script might say.</h2>
-        <p class="lede">Amounts and the destination are placeholders. Copying this into a terminal today will not find a Heistly command, because the app is not open.</p>
+        <p class="kicker">Not a console</p>
+        <h2 id="sample-title">No commands are published yet.</h2>
+        <p class="lede">A CLI and an MCP surface are part of the plan. The names are not final, nothing is installed, and this page does not include a sample that could be mistaken for a working tool.</p>
       </div>
-      <pre class="sample" aria-label="Preview of the Crew CLI, not a live tool"><code>heist note seal --asset usdc --amount 250
-heist getaway pay --asset usdc --amount 40 --to 0x44…E2
-heist switch quote --from eth --to usdg
-heist escape route --to base --asset eth</code></pre>
+      <article class="plain-card">
+        <h3>What an agent will not receive</h3>
+        <p>A seed phrase, a private key, or a copy of the note. When the API exists, a script will be able to ask for a seal, a getaway, a switch, or an escape. It will not be able to ask from this website.</p>
+      </article>
     </div>
   </section>
   <section class="section" aria-labelledby="tools-title">
@@ -138,7 +137,7 @@ heist escape route --to base --asset eth</code></pre>
       <div class="section-head">
         <p class="kicker">MCP names on the brief</p>
         <h2 id="tools-title">Tools an agent would call.</h2>
-        <p class="lede">Names only. No schema is published, and none of these resolve. They are here so a builder can see the shape of the desk.</p>
+        <p class="lede">Working names for the plan. No schema is published, and none of these resolve.</p>
       </div>
       <dl class="glossary">
         <div><dt>heist.note.seal</dt><dd>Ask to seal ETH, USDC, or USDG into a note that stays on the caller’s machine.</dd></div>
@@ -154,7 +153,6 @@ heist escape route --to base --asset eth</code></pre>
       <h2 id="crew-cta">No agent can spend from this page.</h2>
       <p class="lede">When the API opens, the docs will carry the real commands. Until then, treat any package or endpoint that claims to be Heistly as untrusted.</p>
       <a class="btn btn-lime" href="/docs/">Read the short docs</a>
-      <p class="soon">App coming soon</p>
     </div>
   </section>
 </main>
@@ -189,7 +187,7 @@ heist escape route --to base --asset eth</code></pre>
         </ul>
       </div>
     </div>
-    <p class="disclaimer">Preview figures are invented. The app is not open. Heistly is not a custodian and this is not financial advice.</p>
+    <p class="disclaimer">Heistly is in development. This site is not a wallet and not a custodian. Not financial advice.</p>
     <div class="footer-end">
       <p>&copy; <span data-year>2026</span> Heistly · heistlyai.com</p>
       <a class="x-link" data-x-link href="https://x.com/heistlyai" rel="me noopener noreferrer" target="_blank" aria-label="Heistly on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>

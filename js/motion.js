@@ -118,7 +118,7 @@
   function reveals() {
     if (reduce) return;
     var nodes = Array.prototype.slice.call(document.querySelectorAll(
-      ".page-hero, .section-head, .step, .chain-card, .faq, .unlink, .token-figure, .plain-card, .asset-card, .spec > div, .callout, .sample, .cta-band .wrap, .not-found, .glossary div, .demo-flag"
+      ".page-hero, .section-head, .step, .chain-card, .faq, .unlink, .token-figure, .plain-card, .asset-card, .spec > div, .callout, .stage, .cta-band .wrap, .not-found, .glossary div"
     ));
     var counts = new Map();
     nodes.forEach(function (el) {

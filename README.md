@@ -8,7 +8,7 @@ Marketing site for Heistly, a private payments desk. Seal ETH, USDC, or USDG int
 - X: [@heistlyai](https://x.com/heistlyai) — footer only
 - Token: `$HEIST` on Robinhood Chain. The contract address stays empty in `js/config.js` until the real one is published. The site shows “Coming soon” and does not invent an address.
 
-This is a static site. No framework, no build step. The desk on the home page is a scripted preview. The app is not open.
+This is a static site. No framework, no build step. The product is in development. The site does not show balances, notes, or a wallet.
 
 ## Pages
 
@@ -25,6 +25,7 @@ This is a static site. No framework, no build step. The desk on the home page is
 | `/docs/` | `docs/index.html` |
 | `/faq/` | `faq/index.html` |
 | `/token/` | `token/index.html` |
+| `/app/` | `app/index.html` |
 | any unknown path | `404.html` |
 
 ## Run locally
@@ -42,7 +43,7 @@ Open [http://127.0.0.1:47221](http://127.0.0.1:47221).
 `js/config.js` holds the public links.
 
 - `token.contractAddress` — leave `""` until the real Robinhood Chain contract is published.
-- `appUrl` — `"#"` keeps the preview on this site. The app is not open yet.
+- `appUrl` — `"#"`. Launch controls on the site are disabled and read “App launching soon.”
 
 ## Deploy
 
@@ -57,4 +58,4 @@ Self-hosted, SIL Open Font License:
 
 ## Note
 
-Figures on the preview desk are illustrative. Not financial advice.
+The site describes a product in development. Not financial advice.

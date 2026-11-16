@@ -57,7 +57,7 @@
     <div class="class-bar">
       <span>Heistly brief</span>
       <span>Private payments</span>
-      <span>App coming soon</span>
+      <span>In development</span>
     </div>
     <div class="nav-row">
       <a class="brand" href="/">
@@ -77,7 +77,7 @@
         <a href="/token/">$HEIST</a>
       </nav>
       <span class="file-no">File 00</span>
-      <a class="btn btn-lime header-cta" href="/#desk">Preview the desk</a>
+      <a class="btn btn-lime header-cta" href="/app/">Launch app</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
         <span class="nav-toggle-label">Menu</span>
       </button>
@@ -95,14 +95,14 @@
         <a href="/docs/">Docs</a>
         <a href="/faq/">FAQ</a>
         <a href="/token/">$HEIST</a>
-        <a class="btn btn-lime" href="/#desk">Preview the desk</a>
+        <a class="btn btn-lime" href="/app/">Launch app</a>
     </nav>
   </div>
 <main id="content">
   <section class="hero wrap" aria-labelledby="hero-title">
     <div class="hero-copy">
       <p class="kicker">File 00 — Opening brief</p>
-      <p class="status-live"><span class="pulse" aria-hidden="true"></span> Desk closed · App coming soon</p>
+      <p class="status-live"><span class="pulse" aria-hidden="true"></span> In development</p>
       <h1 id="hero-title">
         <span class="line">The perfect</span>
         <span class="line">getaway.</span>
@@ -110,7 +110,7 @@
       </h1>
       <p class="lede">Seal ETH, USDC, or USDG into a note only you can open. When you pay, a Driver posts the transaction and covers the gas. Your wallet is not on that send.</p>
       <div class="hero-actions">
-        <a class="btn btn-lime" href="#desk">Preview the desk</a>
+        <a class="btn btn-lime" href="/app/">Launch app</a>
         <a class="btn btn-ghost" href="/getaway/">See a getaway</a>
       </div>
       <ul class="rule-strip">
@@ -122,34 +122,15 @@
       </ul>
     </div>
 
-    <aside class="desk" id="desk" aria-label="Scripted preview of the Heistly desk. Not a live app.">
-      <div class="desk-top">
-        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-        <p class="window-title">Night desk // preview</p>
-        <span class="demo-pill">Demo</span>
+    <aside class="stage" aria-hidden="true">
+      <div class="vault">
+        <span class="vault-frame"></span>
+        <span class="vault-door"></span>
+        <span class="keyhole"></span>
       </div>
-      <p class="desk-note">Scripted preview. App coming soon. These figures are invented.</p>
-      <ul class="balances">
-        <li><span class="bal" data-count="2.4" data-decimals="2">2.40</span><span>ETH</span></li>
-        <li><span class="bal" data-count="4200" data-group="1">4,200</span><span>USDC</span></li>
-        <li><span class="bal" data-count="9800" data-group="1">9,800</span><span>USDG</span></li>
-      </ul>
-      <div class="flow-block" data-flow>
-        <ol class="flow-steps">
-          <li data-step="seal" data-caption="Seal. Assets enter the vault as a note.">Seal</li>
-          <li data-step="prove" data-caption="Prove. The proof is built on your side.">Prove</li>
-          <li data-step="driver" data-caption="Driver. A relayer pays the gas and posts.">Driver</li>
-          <li data-step="delivered" data-caption="Delivered. Their address is paid. Yours is not.">Delivered</li>
-        </ol>
-        <div class="flow-track" aria-hidden="true"><span data-flow-bar></span></div>
-        <p class="flow-caption" data-flow-caption>Seal. Assets enter the vault as a note.</p>
-        <p class="stamp">No trail</p>
-      </div>
-      <ul class="notes">
-        <li><span>Note 1841 · ETH</span><span>0.80</span><span class="tag">Sealed</span></li>
-        <li><span>Note 1842 · USDC</span><span>1,200</span><span class="tag">Sealed</span></li>
-        <li><span>Note 1843 · USDG</span><span>640</span><span class="tag">Queued</span></li>
-      </ul>
+      <span class="env env-a"></span>
+      <span class="env env-b"></span>
+      <span class="env env-c"></span>
     </aside>
 
   </section>
@@ -164,7 +145,7 @@
   <section class="section" id="cut" aria-labelledby="cut-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">01 — The cut</p>
+        <p class="kicker">The cut</p>
         <h2 id="cut-title">Two wallets. Then no line between them.</h2>
         <p class="lede">A public payment draws a straight line from your wallet to theirs. A getaway cuts it. You seal a note, prove you hold it, and the Driver delivers. Their address is paid. Yours is not on that transaction.</p>
       </div>
@@ -173,7 +154,7 @@
         <article class="wallet-card">
           <p class="wallet-kicker">Stays put</p>
           <strong>Your wallet</strong>
-          <em>0xA1…9C · does not sign the send</em>
+          <em>Does not sign the send</em>
         </article>
         <div class="unlink-bridge" aria-hidden="true">
           <span class="half half-l"></span>
@@ -183,7 +164,7 @@
         <article class="wallet-card">
           <p class="wallet-kicker">Gets paid</p>
           <strong>Their address</strong>
-          <em>0x44…E2 · paid from the vault</em>
+          <em>Paid from the vault</em>
         </article>
       </div>
 
@@ -193,28 +174,24 @@
   <section class="section" id="method" aria-labelledby="method-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">02 — The order of work</p>
+        <p class="kicker">The order of work</p>
         <h2 id="method-title">Seal. Prove. Driver. Delivered.</h2>
-        <p class="lede">Four beats, and they stay in that order. The preview on this page loops them so you can watch the handoff. The app that would run them is not open.</p>
+        <p class="lede">Four beats, and they stay in that order. This is the plan we are building. The app is not open, and these cards do not run a payment.</p>
       </div>
       <ol class="steps" data-flow>
         <li class="step" data-step="seal">
-          <span class="step-no">01</span>
           <h3>Seal</h3>
           <p>ETH, USDC, or USDG enters the vault. You keep an encrypted note. The chain sees a deposit, not your next payment.</p>
         </li>
         <li class="step" data-step="prove">
-          <span class="step-no">02</span>
           <h3>Prove</h3>
           <p>A zero-knowledge proof is built where you sit. It shows the note is yours and unspent, without naming which note.</p>
         </li>
         <li class="step" data-step="driver">
-          <span class="step-no">03</span>
           <h3>Driver</h3>
           <p>The Driver, a relayer, pays the gas and posts the send. Your wallet does not sign it, so your address is not in it.</p>
         </li>
         <li class="step" data-step="delivered">
-          <span class="step-no">04</span>
           <h3>Delivered</h3>
           <p>The address you named is paid from the vault. You still hold the note. The public record shows a delivery, not your trail.</p>
         </li>
@@ -225,29 +202,29 @@
   <section class="section" id="lanes" aria-labelledby="lanes-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">03 — Escape lanes</p>
+        <p class="kicker">Escape lanes</p>
         <h2 id="lanes-title">Five chains. One quiet desk.</h2>
         <p class="lede">Robinhood Chain is home. Base, Arbitrum, BNB Chain, and Solana are escape routes: a private bridge, not a public hop from your wallet.</p>
       </div>
       <div class="chain-grid cols-5">
-        <a class="chain-card" href="/chains/#robinhood"><span class="chain-no">01</span><h3>Robinhood Chain</h3><p class="home-mark">Home of $HEIST</p><p>The first vault, and the chain where the mark is issued.</p></a>
-        <a class="chain-card" href="/chains/#base"><span class="chain-no">02</span><h3>Base</h3><p>An escape lane. Arrive without your wallet walking the bridge.</p></a>
-        <a class="chain-card" href="/chains/#arbitrum"><span class="chain-no">03</span><h3>Arbitrum</h3><p>Same desk, another street. The delivery does not name you.</p></a>
-        <a class="chain-card" href="/chains/#bnb"><span class="chain-no">04</span><h3>BNB Chain</h3><p>A route off the home chain when the job is somewhere else.</p></a>
-        <a class="chain-card" href="/chains/#solana"><span class="chain-no">05</span><h3>Solana</h3><p>Its own rail. Still an escape, not a public transfer from you.</p></a>
+        <a class="chain-card" href="/chains/#robinhood"><h3>Robinhood Chain</h3><p class="home-mark">Home of $HEIST</p><p>The first vault, and the chain where the mark is issued.</p></a>
+        <a class="chain-card" href="/chains/#base"><h3>Base</h3><p>An escape lane. Arrive without your wallet walking the bridge.</p></a>
+        <a class="chain-card" href="/chains/#arbitrum"><h3>Arbitrum</h3><p>Same desk, another street. The delivery does not name you.</p></a>
+        <a class="chain-card" href="/chains/#bnb"><h3>BNB Chain</h3><p>A route off the home chain when the job is somewhere else.</p></a>
+        <a class="chain-card" href="/chains/#solana"><h3>Solana</h3><p>Its own rail. Still an escape, not a public transfer from you.</p></a>
       </div>
     </div>
   </section>
   <section class="token-band" id="mark" aria-labelledby="mark-title">
     <div class="wrap">
       <div>
-        <p class="kicker">04 — The mark</p>
+        <p class="kicker">The mark</p>
         <h2 id="mark-title">$HEIST on Robinhood Chain.</h2>
         <p class="lede">The token is the desk’s mark. The contract is not public yet. When it is, it will be printed on the token page. Not in a direct message.</p>
-        <p><a class="link-arrow" href="/token/">Contract, chain, and nothing invented</a></p>
+        <p><a class="link-arrow" href="/token/">Where the address will be printed</a></p>
       </div>
-      <aside class="token-figure" aria-label="Token preview">
-        <p class="kicker">Coming soon</p>
+      <aside class="token-figure" aria-label="$HEIST, address not published">
+        <p class="kicker">Address unpublished</p>
         <strong>$HEIST</strong>
         <p class="lede" style="margin-top:0.6rem">Robinhood Chain · address unpublished</p>
       </aside>
@@ -256,7 +233,7 @@
   <section class="section" id="questions" aria-labelledby="faq-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">05 — Before you seal</p>
+        <p class="kicker">Before you seal</p>
         <h2 id="faq-title">Questions worth asking first.</h2>
       </div>
       <div class="faq-list">
@@ -273,8 +250,8 @@
         <div class="answer"><p>No. The Driver is a relayer. It pays the gas and submits the proof. Your wallet does not sign the outgoing transaction, which is why it never touches that send.</p></div>
       </details>
       <details class="faq">
-        <summary>Is the desk on this site live?</summary>
-        <div class="answer"><p>No. The panel is a scripted preview. Balances, notes, and deliveries are invented. The app is not open yet.</p></div>
+        <summary>Is the app available?</summary>
+        <div class="answer"><p>No. Heistly is in development. This website is the brief, not a wallet. There is no balance here and no way to send funds from these pages.</p></div>
       </details>
       </div>
       <p><a class="link-arrow" href="/faq/">All questions</a></p>
@@ -284,9 +261,8 @@
     <div class="wrap">
       <p class="kicker">The desk is closed</p>
       <h2 id="close-title">The app is not open yet.</h2>
-      <p class="lede">The preview above is a script. Notes, balances, and the Driver’s loop are there so you can see the order of work. Nothing on this page is a live wallet.</p>
-      <a class="btn btn-lime" href="#desk">Back to the preview</a>
-      <p class="soon">App coming soon</p>
+      <p class="lede">This site is the brief. The vault, the Driver, and the routes are what we are building. Nothing on this page moves funds.</p>
+      <a class="btn btn-lime" href="/app/">Launch app</a>
     </div>
   </section>
 </main>
@@ -321,7 +297,7 @@
         </ul>
       </div>
     </div>
-    <p class="disclaimer">Preview figures are invented. The app is not open. Heistly is not a custodian and this is not financial advice.</p>
+    <p class="disclaimer">Heistly is in development. This site is not a wallet and not a custodian. Not financial advice.</p>
     <div class="footer-end">
       <p>&copy; <span data-year>2026</span> Heistly · heistlyai.com</p>
       <a class="x-link" data-x-link href="https://x.com/heistlyai" rel="me noopener noreferrer" target="_blank" aria-label="Heistly on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
